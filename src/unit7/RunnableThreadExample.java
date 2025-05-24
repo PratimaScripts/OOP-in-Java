@@ -22,12 +22,12 @@ public class RunnableThreadExample implements Runnable {
     public static void main(String [] args){
         Thread t1 = new Thread(new RunnableThreadExample(),"t11");
         t1.start();
-//        Thread t2 = new Thread(new RunnableThreadExample(),"t22");
-//        t2.start();
-//        Thread t3 = new Thread(new RunnableThreadExample(),"t33");
-//        t3.start();
-//        Thread t4 = new Thread(new RunnableThreadExample(),"t44");
-//        t4.start();
+        Thread t2 = new Thread(new RunnableThreadExample(),"t22");
+        t2.start();
+        Thread t3 = new Thread(new RunnableThreadExample(),"t33");
+        t3.start();
+        Thread t4 = new Thread(new RunnableThreadExample(),"t44");
+        t4.start();
     }
 
 }
