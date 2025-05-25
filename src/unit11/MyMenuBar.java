@@ -5,6 +5,7 @@ import java.awt.event.ActionListener;
 import javax.swing.*;
 
 public class MyMenuBar extends JFrame implements ActionListener {
+	
     private JMenuItem item1 = new JMenuItem("Open");
     private JMenuItem item2 = new JMenuItem("Cancel");
 
