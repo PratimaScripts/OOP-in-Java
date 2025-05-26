@@ -7,7 +7,7 @@ import java.sql.*;
 public class SaveRecords {
 
     public static void main(String[] args) {
-        String url = "jdbc:mysql://localhost:3306/megacollege";
+        String url = "jdbc:mysql://localhost:3306/megacollege"; //orchid
         String uname = "root";
         String pwd = "";
 
