@@ -29,7 +29,7 @@ public class LoopingStatements {
         // foreach loop: Iterates over elements of arrays or collections.
         int[] numbers = {1, 2, 3, 4, 5};
 
-        for (int num: numbers) { //The Element on the left should be of the same datatype of the array or one that can be converted into 
+        for (int num : numbers) { //The Element on the left should be of the same datatype of the array or one that can be converted into
             System.out.println(num);
         }
 

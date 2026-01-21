@@ -16,7 +16,7 @@ class ThisIsMyThread extends Thread {
 
 public class ThreadExample {
     public static void main(String[] args) {
-    	ThisIsMyThread t = new ThisIsMyThread();
+        ThisIsMyThread t = new ThisIsMyThread();
         t.start();
     }
 }

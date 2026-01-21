@@ -1,34 +1,29 @@
 package regex;
+
 import java.io.*;
-class IOScannerProgram
-{
-	public static void main(String args[])throws IOException{
-		try 
-	      {
-	         File fileIn  = new File("c:/files/Sri.txt");
-	         File fileOut = new File("c:/files/Finalbatch.txt");
 
-	         FileInputStream streamIn   = new FileInputStream(fileIn);
-	         FileOutputStream streamOut = new FileOutputStream(fileOut);
+class IOScannerProgram {
+    public static void main(String args[]) throws IOException {
+        try {
+            File fileIn = new File("c:/files/Sri.txt");
+            File fileOut = new File("c:/files/Finalbatch.txt");
 
-	         int c;
-	         while ((c = streamIn.read()) != -1) 
-	         {
-	        	 System.out.print((char)streamIn.read() );
-	        	 System.out.println();
-	        	// streamOut.write(c);
-	         }
+            FileInputStream streamIn = new FileInputStream(fileIn);
+            FileOutputStream streamOut = new FileOutputStream(fileOut);
 
-	         streamIn.close();
-	         streamOut.close();
-	      }
-	      catch (FileNotFoundException e) 
-	      {
-	         System.err.println("FileCopy: " + e);
-	      } 
-	      catch (IOException e) 
-	      {
-	         System.err.println("FileCopy: " + e);
-	      }
-	   }
-	}
+            int c;
+            while ((c = streamIn.read()) != -1) {
+                System.out.print((char) streamIn.read());
+                System.out.println();
+                // streamOut.write(c);
+            }
+
+            streamIn.close();
+            streamOut.close();
+        } catch (FileNotFoundException e) {
+            System.err.println("FileCopy: " + e);
+        } catch (IOException e) {
+            System.err.println("FileCopy: " + e);
+        }
+    }
+}

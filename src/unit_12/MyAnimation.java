@@ -5,8 +5,8 @@ import java.awt.*;
 
 public class MyAnimation extends JPanel implements Runnable {
 
-	private static final long serialVersionUID = 1L;
-	private int x = 0;
+    private static final long serialVersionUID = 1L;
+    private int x = 0;
     private int y = 50;
 
     public MyAnimation() {

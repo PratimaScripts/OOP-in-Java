@@ -4,9 +4,9 @@ import java.util.HashMap;
 import java.util.Hashtable;
 import java.util.LinkedHashMap;
 import java.util.Map;
- 
+
 public class Test {
- 
+
     public static void main(String[] args) {
         int tableSize = 256;
         int keys = 200000;
@@ -19,7 +19,7 @@ public class Test {
         testHashMapDoubleSquared(new LinkedHashMap(tableSize), keys);
         System.out.println("End");
     }
- 
+
     public static void testHashMapInteger(Map map, int size) {
         long start = System.currentTimeMillis();
         for (int i = 0; i < size; i++) {
@@ -36,7 +36,7 @@ public class Test {
                 map.getClass().getName() + " middle time: " + (middle - start));
         System.out.println(map.getClass().getName() + " time: " + final1);
     }
- 
+
     public static void testHashMapDoubleSquared(Map map, int size) {
         long start = System.currentTimeMillis();
         for (int i = 0; i < size; i++) {
@@ -53,6 +53,6 @@ public class Test {
                 map.getClass().getName() + " middle time: " + (middle - start));
         System.out.println(map.getClass().getName() + " time: " + final1);
     }
- 
+
 }
 

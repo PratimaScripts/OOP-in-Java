@@ -6,16 +6,16 @@ class PriorityThread extends Thread {
     }
 
     public void run() {
-        
-            try {
-            	for (int i = 0; i < 5; i++) {
-                    System.out.println(Thread.currentThread().getName() + " Priority: " + Thread.currentThread().getPriority());
-                    Thread.sleep(500);
-            	}
-			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
+
+        try {
+            for (int i = 0; i < 5; i++) {
+                System.out.println(Thread.currentThread().getName() + " Priority: " + Thread.currentThread().getPriority());
+                Thread.sleep(500);
+            }
+        } catch (InterruptedException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
     }
 }
 

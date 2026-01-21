@@ -5,17 +5,12 @@ import java.io.IOException;
 import java.util.Properties;
 
 
-public class PropertiesProgram{
-	public static void main( String[] args ) throws IOException
-    {
-    Properties props = new Properties();
-    FileInputStream fis =
-            new FileInputStream( "C:/hibernate/Assignment/JDBC/src/Chapter_17/ApplicationResources.properties" );
-    props.load( fis );
-    fis.close();
-    
-   
-    
+public class PropertiesProgram {
+    public static void main(String[] args) throws IOException {
+        Properties props = new Properties();
+        FileInputStream fis = new FileInputStream("C:/hibernate/Assignment/JDBC/src/Chapter_17/ApplicationResources.properties");
+        props.load(fis);
+        fis.close();
     
  /*   Enumeration keys = props.keys();
     while ( keys.hasMoreElements() )
@@ -35,10 +30,7 @@ public class PropertiesProgram{
     	System.out.println(objState+"\n");
     }
     */
-   
-  
-    
-        
-    
+
+
     }
 }

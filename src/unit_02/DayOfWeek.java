@@ -3,7 +3,7 @@ package unit_02;
 public class DayOfWeek {
     public static void main(String[] args) {
         int day = 3; // Assuming 1 represents Monday, 2 represents Tuesday, and so on
-        
+
         String days;
 
         switch (day) {
@@ -34,11 +34,11 @@ public class DayOfWeek {
         }
 
         System.out.println("The day of the week is: " + days);
- 
-       //using switch with an array  
+
+        //using switch with an array
         String[] daysOfWeek = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"};
-       
-        
+
+
         int dayIndex = 6; // Assuming 0 represents Monday, 1 represents Tuesday, and so on
 
         String dayOfWeek;
@@ -71,6 +71,6 @@ public class DayOfWeek {
         }
 
         System.out.println("The day of the week is: " + dayOfWeek);
-   
-        }
+
+    }
 }

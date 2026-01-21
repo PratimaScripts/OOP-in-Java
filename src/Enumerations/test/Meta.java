@@ -6,19 +6,21 @@ import java.lang.reflect.*;
 // An annotation type declaration.
 
 @Retention(RetentionPolicy.RUNTIME)
-@interface MyAnno{
+@interface MyAnno {
     String str();
+
     int val();
 }
-class Meta{
+
+class Meta {
     // Annotate a method.
-    @MyAnno(str = "Annotation Example", val=100)
-    public static void myMeth(){
+    @MyAnno(str = "Annotation Example", val = 100)
+    public static void myMeth() {
         Meta ob = new Meta();
 
         // obtain the annotation for this method
         // and display the values of the members.
-        try{
+        try {
             // First, get a class object that repersents this class
             Class c = ob.getClass();
 
@@ -28,12 +30,13 @@ class Meta{
             MyAnno anno = m.getAnnotation(MyAnno.class);
 
             // Finally, display the values.
-            System.out.println(anno.str()+""+anno.val());
-        }catch(NoSuchMethodException exc)
-        {System.out.println("Method Not Found.");
+            System.out.println(anno.str() + "" + anno.val());
+        } catch (NoSuchMethodException exc) {
+            System.out.println("Method Not Found.");
         }
     }
-    public static void main(String args[]){
+
+    public static void main(String args[]) {
         myMeth();
     }
 

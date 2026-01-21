@@ -1,25 +1,22 @@
 package unit_05;
 
 public class MultipleCatchException {
-	public static void main(String args[]) {
-		try {
-			int a = args.length;
+    public static void main(String args[]) {
+        try {
+            int a = args.length;
 
-			System.out.println("**** Args values Are **** " + a);
+            System.out.println("**** Args values Are **** " + a);
 //			int b = 42 / a;
-			int c[] = {1};
-			c[42] = 99;
-		} 
-		catch (ArithmeticException e) {
-			 e.printStackTrace();
-			System.out.println("***** Divide By ZERO **** " + e);
-		} 
-		catch (ArrayIndexOutOfBoundsException abc) {
+            int c[] = {1};
+            c[42] = 99;
+        } catch (ArithmeticException e) {
+            e.printStackTrace();
+            System.out.println("***** Divide By ZERO **** " + e);
+        } catch (ArrayIndexOutOfBoundsException abc) {
 //			 abc.printStackTrace();
-			System.out.println("In ArrayIndexOutOfBoundsException " + abc);
-		}
-		finally {
-			System.out.println("**** After Try Catch Statement *****");
-		} 
-	}
+            System.out.println("In ArrayIndexOutOfBoundsException " + abc);
+        } finally {
+            System.out.println("**** After Try Catch Statement *****");
+        }
+    }
 }

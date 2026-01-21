@@ -1,11 +1,11 @@
 package unit_03;
 
 public class LongToInteger {
-	public static void main(String[] args) {
-		long lg= 2222;
+    public static void main(String[] args) {
+        long lg = 2222;
 
-		int it = (int)lg;
+        int it = (int) lg;
 
-		System.out.println("Conversion from long to int "+ it);
-	}
+        System.out.println("Conversion from long to int " + it);
+    }
 }

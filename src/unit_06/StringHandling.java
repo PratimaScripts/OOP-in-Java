@@ -9,7 +9,7 @@ public class StringHandling {
         String str2 = "World!";
         String result = str1.concat(str2);
         System.out.println("Using String concatenation: " + result);
-        
+
         // Using StringBuilder
         StringBuilder sb = new StringBuilder();
         sb.append(str1);

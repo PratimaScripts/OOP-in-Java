@@ -1,30 +1,26 @@
 package CollectionsExample;
 
 
-class CloneProgram
-{
-	public static void main(String args[])
-	{
-		String userCurrentlyLogedOn = System.getProperty("user.name");
-		String usersCurrntWorkingDir = System.getProperty("user.dir");
-		
-		System.out.println("user name=="+userCurrentlyLogedOn);
+class CloneProgram {
+    public static void main(String args[]) {
+        String userCurrentlyLogedOn = System.getProperty("user.name");
+        String usersCurrntWorkingDir = System.getProperty("user.dir");
 
-		System.out.println("user current dir name=="+usersCurrntWorkingDir);
+        System.out.println("user name==" + userCurrentlyLogedOn);
 
-		System.out.println("System environment=="+System.getenv());
+        System.out.println("user current dir name==" + usersCurrntWorkingDir);
 
-		String strArray[] = {"AA","KK","BB","CC","DD",};
+        System.out.println("System environment==" + System.getenv());
 
-		String a2[]=strArray.clone(); 
+        String strArray[] = {"AA", "KK", "BB", "CC", "DD",};
 
-		System.out.println(a2.length);
+        String a2[] = strArray.clone();
 
-		for(String elements : a2)
+        System.out.println(a2.length);
 
-		System.out.println(elements);
-		
-		 
-		
-	}
+        for (String elements : a2)
+
+            System.out.println(elements);
+
+    }
 }

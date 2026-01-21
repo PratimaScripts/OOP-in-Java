@@ -4,18 +4,17 @@ import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
 
-class SetProgram
-{
-	public static void main(String args[]){
-	
-	Set<String> setObj = new HashSet<String>();
-	setObj.add("anil");
-	setObj.add("12");
-	setObj.add("Gupta");
-	
-		System.out.println("Welcome to Collection");
-	
-	Iterator it = setObj.iterator();
+class SetProgram {
+    public static void main(String args[]) {
+
+        Set<String> setObj = new HashSet<String>();
+        setObj.add("anil");
+        setObj.add("12");
+        setObj.add("Gupta");
+
+        System.out.println("Welcome to Collection");
+
+        Iterator it = setObj.iterator();
 	
 /*	while(it.hasNext()){
 		
@@ -24,13 +23,11 @@ class SetProgram
 */
 
 
+// iterate a Collection
+        for (String eachLoop : setObj) {
+            System.out.println(eachLoop);
 
-
-// iterate a Collection 
- for ( String eachLoop : setObj )   {  
-     System.out.println ( eachLoop ) ; 
-      
-  }  
+        }
 //System.out.println (setObj.get(1)) ;
 
 
@@ -42,5 +39,5 @@ class SetProgram
 	System.out.println(listObj);
 	} */
 
-	}
+    }
 }

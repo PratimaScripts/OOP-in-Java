@@ -10,10 +10,7 @@ class HashTableProgram {
 		hashTable.put("Arvind", 2);
 		hashTable.put("Ashish", 3);
 		hashTable.put("Rishav", 4);
-		
-		
-		System.out.println(hashTable);
-		
 
+		System.out.println(hashTable);
 	}
 }

@@ -1,11 +1,9 @@
 package unit_10;
 
-public class MyTwoArray
-{
-    public void display()
-    {
+public class MyTwoArray {
+    public void display() {
         //Declaring a 2D array 
-        int [][] arr = new int[3][3];
+        int[][] arr = new int[3][3];
         arr[0][0] = 1;
         arr[0][1] = 2;
         arr[0][2] = 3;
@@ -15,18 +13,16 @@ public class MyTwoArray
         arr[2][0] = 7;
         arr[2][1] = 8;
         arr[2][2] = 9;
-        
-        for(int i=0;i<3;i++)
-        {
-            for(int j=0;j<3;j++)
-            {
+
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
                 System.out.println(arr[i][j]);
             }
         }
     }
-    
-    public static void main(String [] args) {
-    	MyTwoArray myTwoArray = new MyTwoArray();
-    	myTwoArray.display();
+
+    public static void main(String[] args) {
+        MyTwoArray myTwoArray = new MyTwoArray();
+        myTwoArray.display();
     }
 }

@@ -30,7 +30,7 @@ public class PingPongExample {
     public static void main(String[] args) {
         PingThread ping = new PingThread();
         PongThread pong = new PongThread();
-        
+
         ping.start();
         pong.start();
     }

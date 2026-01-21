@@ -2,10 +2,10 @@ package unit_10;
 
 import java.util.ArrayList;
 
-public class MyArrayList
-{
+public class MyArrayList {
     ArrayList<String> myList = new ArrayList<String>();
-    public void display(){
+
+    public void display() {
         myList.add("Ram");
         myList.add("Sita");
         myList.add("Laxman");
@@ -21,15 +21,15 @@ public class MyArrayList
             System.out.println(itr.next());
         }
         */
-        for(String val:myList) {
-        	System.out.println(val);
+        for (String val : myList) {
+            System.out.println(val);
         }
-        
+
         System.out.println(myList.indexOf("Ram"));
     }
-    
-    public static void main(String [] args) {
-    	MyArrayList myArrayList = new MyArrayList();
-    	myArrayList.display();
+
+    public static void main(String[] args) {
+        MyArrayList myArrayList = new MyArrayList();
+        myArrayList.display();
     }
 }

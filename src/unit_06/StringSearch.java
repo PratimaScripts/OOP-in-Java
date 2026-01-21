@@ -6,7 +6,7 @@ public class StringSearch {
     public static void main(String[] args) {
         String str = "The quick brown fox jumps over the lazy dog.";
         String substr = "over";
-        
+
         int index = str.indexOf(substr);
         System.out.println("..........." + index);
         if (index != -1) {

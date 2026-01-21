@@ -1,7 +1,7 @@
 package Utilities;
-class FindNoOfdayYear
-{
-public static void main(String[] args) {
+
+class FindNoOfdayYear {
+    public static void main(String[] args) {
 
         int month = 9;
         int year = 2008;
@@ -24,8 +24,8 @@ public static void main(String[] args) {
                 numDays = 30;
                 break;
             case 2:
-                if ( ((year % 4 == 0) && !(year % 100 == 0))
-                     || (year % 400 == 0) )
+                if (((year % 4 == 0) && !(year % 100 == 0))
+                        || (year % 400 == 0))
                     numDays = 29;
                 else
                     numDays = 28;

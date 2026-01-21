@@ -5,12 +5,12 @@ import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
 import javax.swing.*;
 
-public class GridBagLayoutExample extends JFrame{
-    
-	public static void main(String[] args) {
+public class GridBagLayoutExample extends JFrame {
+
+    public static void main(String[] args) {
         GridBagLayoutExample a = new GridBagLayoutExample();
     }
-    
+
     public GridBagLayoutExample() {
 
         GridBagLayout grid = new GridBagLayout();

@@ -6,11 +6,6 @@
 
 package unit_02;
 
-/**
-*
-* @author prati
-*/
-
 public class DataTypes {
     public static void main(String[] args) {
         // Declaration and initialization of variables for each primitive data type
@@ -55,11 +50,11 @@ public class DataTypes {
 
         // Declaration and initialization of an array of integers
         int[] numbers = {
-            10,
-            20,
-            30,
-            40,
-            50
+                10,
+                20,
+                30,
+                40,
+                50
         };
 
         // Accessing and printing elements of the array

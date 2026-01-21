@@ -1,7 +1,7 @@
 package unit_02;
-class SwithcExample
-{
-public static void main(String[] args) {
+
+class SwitchExample {
+    public static void main(String[] args) {
 
         int month = 12;
         int year = 2008;
@@ -24,11 +24,8 @@ public static void main(String[] args) {
                 numDays = 30;
                 break;
             case 2:
-                if ( ((year % 4 == 0) && !(year % 100 == 0))
-                     || (year % 400 == 0) )
-                    numDays = 29;
-                else
-                    numDays = 28;
+                if (((year % 4 == 0) && !(year % 100 == 0)) || (year % 400 == 0)) numDays = 29;
+                else numDays = 28;
                 break;
             default:
                 System.out.println("Invalid month.");

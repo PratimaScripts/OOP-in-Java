@@ -14,12 +14,12 @@ public class MyPanels {
     JPanel mainPanel;// a main panel is declared
     JPanel p1, p2; //two panels that will fill the mainPanel are declared
 
-    public static void main(String [] args){
+    public static void main(String[] args) {
 
         new MyPanels();//calling the constructor
     }
 
-    public MyPanels(){
+    public MyPanels() {
         j = new JFrame("Working with multiple panels");
 
         //instantiating panels
@@ -53,12 +53,12 @@ public class MyPanels {
 
         //p1.setLayout(new GridLayout(3,3));
         //adding p1 panel to the frame and assigning layout
-        j.add(p1,BorderLayout.CENTER);
+        j.add(p1, BorderLayout.CENTER);
         //adding p2 panel to the frame and assigning layout
-        j.add(p2,BorderLayout.PAGE_END);
+        j.add(p2, BorderLayout.PAGE_END);
 
         //setting size of the JFrame
-        j.setSize(400,500);
+        j.setSize(400, 500);
         j.setVisible(true);//Making the frame visible
         //Closing the application when close button of the frame is clicked
         j.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
