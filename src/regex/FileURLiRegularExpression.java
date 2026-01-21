@@ -55,22 +55,7 @@ class FileURLiRegularExpression {
         System.out.println("***Number Of Lines Found In File ----" + recCount);
 
     }
-	
-		
-		
-		
-		
-		
-		
-	
-		
-		
-		
-		
-		
-		
-		
-		
+
 	/*	
 		//Input the string for validation
 		String email = "xyz@hotmail.com";

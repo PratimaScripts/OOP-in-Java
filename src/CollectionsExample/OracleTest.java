@@ -4,7 +4,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.Statement;
 
-public class oracletest {
+public class OracleTest {
     public static void main(String[] a) {
         try {
             Connection con = null;
