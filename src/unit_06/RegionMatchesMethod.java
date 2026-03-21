@@ -1,6 +1,6 @@
 package unit_06;
 
-public class regionmatchesMethod {
+public class RegionMatchesMethod {
     public static void main(String args[]) {
         String str1 = new String("Java is a wonderful language");
         String str2 = new String("It is an object-oriented language");
